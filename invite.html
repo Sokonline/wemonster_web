@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+		<title>Friend Requests</title>
+
+		<style type="text/css">
+		<!--
+		body {
+			font-family: Helvetica, Verdana, Arial, sans-serif;
+			background-color: white;
+			color: black;
+			text-align: center;
+		}
+		a:link, a:visited {
+			color: #000;
+		}
+		a:active, a:hover {
+			color: #666;
+		}
+		p.header {
+			font-size: small;
+		}
+		p.header span {
+			font-weight: bold;
+		}
+		p.footer {
+			font-size: x-small;
+		}
+		div.content {
+			margin: auto;
+			width: 600px;
+		}
+		div.missing {
+			margin: auto;
+			position: relative;
+			top: 50%;
+			width: 193px;
+		}
+		div.missing a {
+			height: 63px;
+			position: relative;
+			top: -31px;
+		}
+		div.missing img {
+			border-width: 0px;
+		}
+		div#unityPlayer {
+			cursor: default;
+			height: 450px;
+			width: 600px;
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script type="text/javascript">
+		  window.fbAsyncInit = function() {
+			FB.init({appId: '207651589270563', status: true, cookie: true, xfbml: true});
+FB.Event.subscribe('auth.login', function(response) {
+				requestFriends();
+			});
+		  };
+
+		  (function() {
+			var e = document.createElement('script');
+			e.type = 'text/javascript';
+			e.async = true;
+			e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+		    	document.getElementById('fb-root').appendChild(e);
+		  }());
+
+		function requestFriends() {
+FB.ui({method: 'apprequests', message: 'WeMonster is fun!', filters: ['app_non_users'], data: 'tracking information for the user', title: 'Invite your friends to WeMonster!'},
+function(){
+        top.location.href = "http://apps.facebook.com/wm_test_page";
+    });
+		}
+
+		</script>
+
+
+		<p class="header"></p>
+		<div class="content">
+		
+		</div>
+	</body>
+</html>

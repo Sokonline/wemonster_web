@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+  <title>weforest</title>
+  <meta property="og:title" content="weforest"/>
+  <meta property="og:type" content="bar"/>
+  <meta property="og:image" content="http://profile.ak.fbcdn.net/hprofile-ak-snc4/hs355.snc4/41800_157551267602956_958536_n.jpg"/>
+  <meta property="og:site_name" content="weforest"/>
+  <meta property="fb:app_id" content="151346468255962"> <!-- Replace app id with your own-->
+  <meta property="og:description" content="Stop deforestation on tree at a time."/>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+      //Replace appId with your own
+      FB.init({appId: '151346468255962', status: true, cookie: true,
+               xfbml: true});
+    };
+    (function() {
+      var e = document.createElement('script'); e.async = true;
+      e.src = document.location.protocol +
+        '//connect.facebook.net/en_US/all.js';
+      document.getElementById('fb-root').appendChild(e);
+    }());
+  </script>
+
+  <div id="header">
+  </div>
+  <div id="content">
+    <div id="container">
+      <div id="left-sidebar">
+        <div id="logo"></div>     
+      </div>
+      <div id="right-sidebar">
+        <div class="facebook-plugin">
+          <fb:like></fb:like>
+        </div>
+        <div id="map"></div>
+        <h2>Comments</h2>
+<fb:comments url="http://www.hsiet.com/winery/storybar.html" width="610px" height="700px" simple="1" css="http://www.hsiet.com/winery/style.css"></fb:comments>
+      </div>
+    </div>
+  </div> 
+<div id="footer"></div> 
+</body>
+</html>
